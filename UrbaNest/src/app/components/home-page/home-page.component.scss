@@ -1,0 +1,120 @@
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/house1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // animation: 16s ease-in-out 0s infinite slider;
+}
+
+.header {
+    z-index: 1;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--white);
+    z-index: 1;
+}
+
+.contents {
+    animation: 1.2s ease-out 0s 1 move-up;
+    text-align: center;
+}
+
+@keyframes slider {
+
+    18% {
+        opacity: 0.8;
+        transition: opacity 0.5s;
+    }
+
+    25% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/house2.jpg');
+        transform: translateX(0);
+        transition: opacity 0.2s;
+        opacity: 1;
+    }
+
+    43% {
+        opacity: 0.8;
+        transition: opacity 0.5s;
+    }
+
+    50% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/house3.jpg');
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+
+    68% {
+        opacity: 0.8;
+        transition: opacity 0.5s;
+    }
+
+    75% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/house4.jpg');
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+
+    93% {
+        opacity: 0.4s;
+        transition: opacity 0.5s;
+    }
+
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/house1.jpg');
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+}
+
+@keyframes move-up {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    input {
+        width: 450px;
+        height: 50px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: medium;
+    }
+}
+
+button {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border-radius: 30px;
+    font-size: 15px;
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+}

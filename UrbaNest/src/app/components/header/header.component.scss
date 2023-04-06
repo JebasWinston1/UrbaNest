@@ -1,12 +1,13 @@
 .container {
-    background-color: var(--dark-green);
-    height: 105px;
+    // background-color: var(--dark-green);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 85px;
     width: 80%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: absolute;
     top: 40px;
     left: 0;
     right: 0;
@@ -25,6 +26,9 @@
 a {
     color: rgba($color: #FFFFFF, $alpha: 0.7);
     font-size: 18px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav>ul>li {
@@ -34,7 +38,7 @@ a {
 }
 
 a:hover {
-    color: var(--white);
+    color: var(--dark-green);
 }
 
 .dropdown {
@@ -54,10 +58,11 @@ a:hover {
 
 .dropdown>li {
     margin: 10px;
+    padding: 10px;
 }
 
 #second-dropdown {
-    left: 85%;
+    left: 90%;
 }
 
 #properties:hover #property-dropdown {
@@ -74,4 +79,8 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
     pointer-events: all;
+}
+
+#dropdown:hover #angle-bottom {
+    transform: rotate(-90deg);
 }
