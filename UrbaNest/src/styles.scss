@@ -19,3 +19,7 @@
     box-sizing: border-box;
     font-family: 'Work Sans';
 }
+
+*::-webkit-scrollbar{
+    display: none;
+}

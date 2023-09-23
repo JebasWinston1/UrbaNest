@@ -1,0 +1,28 @@
+.content {
+    padding: 30px;
+
+    .service-icon {
+        height: 60px;
+        width: 60px;
+        margin-bottom: 24px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+    }
+
+    .inner-text {
+        margin-bottom: 16px;
+        color: var(--light-gray);
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+    
+    .link {
+        color: var(--black);
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--dark-green);
+    }
+}

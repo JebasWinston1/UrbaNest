@@ -29,6 +29,10 @@ form {
 .contents {
     animation: 1.2s ease-out 0s 1 move-up;
     text-align: center;
+    
+    .title {
+        font-size: xx-large;
+    }
 }
 
 @keyframes slider {
@@ -117,4 +121,11 @@ button {
     height: 50px;
     width: 100px;
     margin-left: 10px;
+}
+
+.services {
+    height: 100%;
+    margin: 5px;
+    display: flex;
+    background-color: var(--variant-white);
 }
